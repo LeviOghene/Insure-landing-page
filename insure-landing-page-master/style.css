@@ -1,0 +1,470 @@
+:root{
+--Dark-Violet: hsl(256, 26%, 20%);
+--Grayish-Blue: hsl(216, 30%, 68%);
+--Very-Dark-Violet: hsl(270, 9%, 17%);
+--Dark-Grayish-Violet: hsl(273, 4%, 51%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+nav .btn-menu{
+    background: none;
+    border: none;
+}
+
+nav .btn-close{
+    background: none;
+    border: none;
+    display: none;
+}
+
+.mobile-menu{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 53.2%;
+    width: 100%;
+    display: none;
+}
+
+.menu{
+    background-color: var(--Very-Dark-Violet);
+    color: var(--Very-Light-Gray);
+    text-align: center;
+    padding: 30px 20px 300px 20px;
+    background-image: url(./images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu ul li{
+    text-transform: uppercase;
+}
+
+.menu ul li button{
+    width: 100%;
+    border: 1px solid var(--Very-Light-Gray);
+    color: var(--Very-Light-Gray);
+    background: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.intro-img{
+    width: 100%;
+    height: 70vh;
+    background: url(./images/image-intro-mobile.jpg);
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.insurance{
+    background-color: var(--Dark-Violet);
+    color: var(--Very-Light-Gray);
+    text-align: center;
+    padding: 70px 30px 80px 30px;
+    background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+.insurance h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.insurance p{
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.insurance .btn-plan{
+    text-transform: uppercase;
+    border: 1px solid var(--Very-Light-Gray);
+    background: none;
+    color: var(--Very-Light-Gray);
+    padding: 10px 25px;
+}
+
+ .insurance-bg{
+    width: 33%;
+    height: 60vh;
+    background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 67.5%;
+    top: 135%;
+    z-index: 1;
+}
+
+.different{
+    text-align: center;
+    padding: 100px 30px;
+}
+
+.different h1{
+    padding: 30px 0 55px 0;
+    font-size: 40px;
+    position: relative;
+    color: var(--Dark-Violet);
+}
+
+.different h1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 40%;
+    border-top: 1px solid hsl(0, 2%, 74%);
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+.service img{
+    margin-bottom: 30px;
+}
+
+.service h2{
+    margin-bottom: 20px;
+    color: var(--Dark-Violet);
+}
+
+.service p{
+    color: var(--Dark-Grayish-Violet);
+    line-height: 1.5rem;
+}
+
+.how{
+    text-align: center;
+    background-color: var(--Dark-Violet);
+    color: var(--Very-Light-Gray);
+    padding: 50px 30px 40px 30px;
+    background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 90%;
+    margin: 0 auto 100px auto;
+}
+
+.how h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.how .btn-how{
+    border: 1px solid var(--Very-Light-Gray);
+    color: var(--Very-Light-Gray);
+    background: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+footer{
+    text-align: center;
+    background-image: url(./images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(0, 9%, 98%);
+    padding: 0 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer .insure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid hsl(0, 5%, 85%);
+    padding-top: 70px;
+}
+
+footer .insure .logo{
+    margin-bottom: 30px;
+}
+
+footer .insure .socials{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0 50px 0;
+    gap: 50px;
+}
+
+footer .about div{
+    text-transform: uppercase;
+}
+
+footer .about div p{
+    color: var(--Dark-Grayish-Violet);
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+footer .about div ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .about div ul li{
+    color: var(--Very-Dark-Violet);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+@media(min-width:900px) {
+   nav{
+     padding: 30px 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   nav .btn-menu{
+     display: none;
+   }
+
+   nav .mobile-menu{
+     display: block;
+     position: absolute;
+     transform: translate(50%, 50%);
+     left: 45%;
+     top: 1%;
+     padding: 0;
+     width: auto;
+   }
+
+   .menu{
+    background: none;
+    color: var(--Dark-Grayish-Violet);
+    text-align: right;
+    padding: 0;
+   }
+
+   .menu ul{
+     flex-direction: row;
+     align-items: center;
+   }
+
+   .menu ul li{
+    font-weight: 700;
+    font-size: 13px;
+   }
+
+   .menu ul li:hover{
+     color: var(--Very-Dark-Violet);
+     cursor: pointer;
+   }
+
+   .menu ul li button{
+     border: 1px solid var(--Very-Dark-Violet);
+     color: var(--Very-Dark-Violet);
+     padding: 10px 25px;
+     font-weight: 400;
+     font-size: 13px;
+   }
+
+   .menu ul li button:hover{
+    cursor: pointer;
+    background-color: var(--Very-Dark-Violet);
+    color: var(--Very-Light-Gray);
+   }
+
+   .intro-img{
+      width: 500px;
+      height: 100vh;
+      background: url(./images/image-intro-desktop.jpg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 26%;
+      left: 55%;
+   }
+
+   .insurance{
+    text-align: start;
+    padding: 80px 100px 90px 100px;
+    margin-bottom: 200px;
+    width: 100%;
+    background-image: none;
+   }
+
+   .insurance .text{
+    width: 50%;
+   }
+
+   .insurance h1{
+    position: relative;
+    font-size: 70px;
+    padding-top: 60px;
+   }
+
+   .insurance h1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    border-top: 1px solid var(--Very-Light-Gray);
+   }
+
+   .insurance .btn-plan:hover{
+    background-color: var(--Very-Light-Gray);
+    cursor: pointer;
+    color: var(--Dark-Violet);
+   }
+
+   .insurance-bg{
+    background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 450px;
+    position: absolute;
+    left: -5%;
+    top: 70%;
+   }
+
+   .insurance-bg-right{
+    background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    z-index: 3;
+    left: 70.2%;
+    top: 1%;
+   }
+
+   .services{
+     flex-direction: row;
+     gap: 30px;
+   }
+
+   .different{
+    text-align: start;
+    width: 90%;
+    margin: 0 auto;
+   }
+
+   .different h1{
+    font-size: 60px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-top: 50px;
+   }
+
+   .different h1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    border-top: 1px solid hsl(0, 2%, 74%);
+}
+
+   .service h2{
+    font-size: 25px;
+   }
+
+   .service p{
+    font-size: 18px;
+   }
+
+   .services {
+    margin-bottom: 60px;
+   }
+
+   .how{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    padding: 50px 80px;
+    margin: 0 auto 150px auto;
+    width: 90%;
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+   }
+
+   .how h1{
+    font-size: 50px;
+    width: 50%;
+   }
+
+   .how .btn-how:hover{
+      background-color: var(--Very-Light-Gray);
+      color: var(--Dark-Violet);
+      cursor: pointer;
+   }
+
+   footer{
+    text-align: start;
+    padding: 50px 100px;
+    background-image: url(./images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+   }
+
+   footer .insure{
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 0;
+   }
+
+   footer .insure .socials img:hover{
+    filter: brightness(0%);
+    cursor: pointer;
+   }
+
+   footer .about{
+    flex-direction: row;
+    gap: 200px;
+   }
+
+   footer .about div p{
+    margin-bottom: 40px;
+   }
+
+   footer .about div ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+   }
+}
+
+
