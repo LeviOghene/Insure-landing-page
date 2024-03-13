@@ -37,6 +37,7 @@ nav .btn-close{
     top: 53.2%;
     width: 100%;
     display: none;
+    z-index:3;
 }
 
 .menu{
@@ -76,6 +77,7 @@ nav .btn-close{
     background: url(./images/image-intro-mobile.jpg);
     background-repeat: no-repeat;
     background-size:100%;
+    position:relative;
     z-index: 2;
 }
 
