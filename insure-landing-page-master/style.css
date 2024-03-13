@@ -114,8 +114,8 @@ nav .btn-close{
     background-image: url(./images/bg-pattern-intro-right-mobile.svg);
     background-repeat: no-repeat;
     position: absolute;
-    left: 67.5%;
-    top: 135%;
+    left: 67%;
+    top: 70%;
     z-index: 1;
 }
 
