@@ -72,9 +72,10 @@ nav .btn-close{
 
 .intro-img{
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background: url(./images/image-intro-mobile.jpg);
     background-repeat: no-repeat;
+    background-size:100%;
     z-index: 2;
 }
 
